@@ -1,0 +1,315 @@
+.background, .background-border{
+  background-color: #EDDCCC;
+border-top-right-radius: 200px;
+border-bottom-left-radius: 80px;
+}
+
+.background{
+  padding: 5px;
+
+}
+
+.background-border{
+border: 3px solid white;
+}
+
+
+
+
+header{
+
+  padding-bottom: 100px;
+}
+
+header::before{
+  content: "";
+  display: block;
+  width: 229px;
+  background-repeat: no-repeat;
+  top: 0;
+  height: 219px;
+  right: 0;
+  background-image: url("../img/flor.png");
+  position: absolute;
+ 
+}
+
+
+
+
+.nomes{
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: #95411A;
+  text-transform: uppercase;
+ 
+
+  
+ 
+}
+
+
+.nomes p {
+  line-height: 1;
+ 
+}
+
+.e{
+  width: 80%;
+  position: relative;
+
+  
+}
+
+
+.e::before{
+  content: "";
+  display: block;
+  width: 30%;
+  left: 0;
+  top:20px;
+  height: 1px;
+  position: absolute;
+  background-color: #95411A;
+}
+
+.e::after{
+  content: "";
+  display: block;
+  width: 30%;
+  right: 0;
+  top:20px;
+  height: 1px;
+  position: absolute;
+  background-color: #95411A;
+}
+
+.frase{
+  text-align: center;
+  ;
+ 
+}
+
+
+
+.convidam{
+  padding-top: 20px;
+}
+
+.convidam, .local{
+  display: flex;
+  justify-content: right;
+  flex-direction: column;
+}
+
+.convidam p,.local p{
+  text-align: center;
+}
+
+.data{
+  padding-top: 10px;
+  text-align: center;
+  font-weight: bold;
+}
+
+
+
+.endereco{
+  font-weight: bold;
+}
+
+.links img{
+  align-self: flex-end;
+ 
+}
+
+.links{
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 40px;
+  
+}
+.links p, .copy-button button{
+  text-align: center !important;
+  color: #95411A ;
+  font-weight: bold;
+  position: relative;
+  z-index: 1;
+}
+
+footer{
+  text-align: center;
+  padding-top: 10px;
+  display: flex;
+  display: flex;
+  justify-content: center;
+
+}
+
+body{
+  position: relative;
+}
+
+footer::before{
+  content: "";
+  display: block;
+  width: 96px;
+  background-repeat: no-repeat;
+  bottom: 0;
+  height: 186px;
+  left: 0;
+  position: absolute;
+
+ 
+}
+
+footer p {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+
+
+@media(min-width:700px){
+  .nomes{
+    align-items: center;
+  }
+  .convidam, .local{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  .convidam p,.local p{
+    text-align: center;
+  }
+
+  .links{
+    justify-content: center;
+  }
+
+
+ 
+}
+
+.copy-button{
+  background-color: transparent;
+  border: none;
+  
+  
+}
+
+#copy-message{
+text-align: center;
+font-weight: bold;
+
+}
+
+.hidden {
+  display: none;
+}
+
+
+.abrir{
+  background-color: #FEFBF6;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  z-index: 2;
+  top: 0px;
+  left: 0px;
+  
+  
+}
+
+/* .abrir::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  background: url("../img/flores.svg") no-repeat;
+  width: 100%;
+  height: 100px;
+  
+}
+
+*/
+
+.abrir div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+ 
+}
+
+.container_envelope{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.envelope{
+  width: 100%;
+  cursor: pointer;
+  border: none;
+  background: transparent;
+      
+}
+
+.abrir.oculto{
+  display: none;
+}
+
+
+
+.container_envelope{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.envelope{
+  width: 100%;
+  cursor: pointer;
+  padding-top: 20px;
+
+      
+}
+
+.btn-js{
+  border: none;
+background-color: transparent;
+}
+
+.abrir div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+ 
+}
+
+
+
+
+.nome1{
+  color: #95411A !important;
+}
+
+
+.logo_flores{
+  width: 100px;
+  position: absolute;
+  top: 0px;
+  left: 0;
+
+}

@@ -1,0 +1,31 @@
+
+.font-1 {
+   font: 2.5rem 'Caveat', cursive;
+  
+}
+.font-1-p {
+    font:0.8rem 'Halant', cursive;
+   
+ }
+ .font-1-m {
+    font:1rem 'Halant', cursive;
+   
+ }
+
+
+.font-2 {
+    font: 2.5rem "Allura", serif !important;
+    
+}
+
+@font-face {
+    font-family: HighSpirited;
+    src: url("HighSpirited.ttf");
+}
+
+/* @media(min-width:355px) {
+    .font-2 {
+        font: 3.9rem "HighSpirited", sans-serif;
+        background-color: red;
+    }
+} */

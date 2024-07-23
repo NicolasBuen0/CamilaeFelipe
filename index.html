@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Allura&family=Halant:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Parisienne&family=Roboto+Slab:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <title>Camila e Felipe</title>
+</head>
+<script>
+    document.documentElement.classList.add("js");
+</script>
+
+<body>
+    <div class="abrir"  >
+        <img src="./img/flor2.png" class="logo_flores" data-anime="200">
+        <div class="container_envelope" >  
+            <p class="font-1" data-anime="200"><span class="nome1">Camila e Felipe</p>
+          <button class="frase font-1-400 btn-js" onclick= "removeModal()" data-anime="600"><img src="img/envelope.png" class="envelope"></button></div>
+      </div>
+    <div class="background">
+        <div class="background-border">
+            <header class="container"></header>
+            <div class="nomes container">
+                <p class="font-1" data-anime="200"><span class="nome1">Camila</span> </p>
+                <p class="font-2 e nome1" data-anime="400">&</p>
+                <p class="font-1" data-anime="600"><span class="nome1">Felipe</span> </p>
+            </div>
+
+
+            <div class="convidam container">
+
+                <p class="font-1-p" data-anime="800">Convidam para a cerimônia<br>de seu casamento</p>
+                <p class="font-1-m data" data-anime="1000">17 DE AGOSTO DE 2024, 21H ÀS 4H</p>
+
+            </div>
+            <div class="local container">
+                <p class="font-1-p endereco" data-anime="1400"> Sítio</p>
+                <p class="font-1-p" data-anime="1600">Rua porto 24,<BR>
+                    Campo Grande - Rio da Prata <BR></p>
+            </div>
+            <div class="links font-1-p container" data-anime="1800">
+                <div class="local flex">
+                    <a href="https://maps.app.goo.gl/wGkvHENtyGyHpL3h6" target="_blank"><img src="img/local.svg">
+                        <p>como<br>chegar</p>
+                    </a>
+                </div>
+                <div class="confirmar flex">
+                    <a href="https://api.whatsapp.com/send?phone=5521979919696&text=Ol%C3%A1%2C%20presen%C3%A7a%20confirmada!" target="_blank">
+                        <img src="img/whats.svg">
+                        <p>confimar <br>presença</p>
+                    </a>
+                </div>
+                <div class="lista flex">
+                    <button class="copy-button font-1-p">
+                        <img src="img/pix.svg">
+                        <p class="copy-button font-1-p">pix <br>presente</p>
+                    </button>
+                </div>
+            </div>
+            <p id="copy-message" class="hidden font-1-p">Chave Pix copiada!</p>
+        </div>
+    </div>
+    <footer>
+        <p class="font-1-p" data-anime="150"><img src="img/toque.png"> Toque nos ícones para interagir</p>
+    </footer>
+    <script src="simple-anime.js">
+    </script>
+
+<script>
+    const btn = document.querySelector('.btn-js');
+    btn.addEventListener("click", showModal);
+
+
+    function removeModal() {
+        const modal = document.querySelector(".abrir");
+        modal.classList.add("oculto");
+    }
+
+    function showModal() {
+        const home = document.querySelector(".home");
+        home.classList.add("ativo");
+    }
+
+    </script>
+
+</body>
+
+</html>
